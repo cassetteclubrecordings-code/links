@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Band Links</title>
+
+  <!-- Google Fonts for a soft lofi aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- Base Aesthetic --- */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1c1b1a; /* warm, dark, soft */
+      color: #e5e3de;
+      font-family: 'Karla', sans-serif;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: url("grain.gif");
+      opacity: 0.18;
+      mix-blend-mode: overlay;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 60px auto;
+      padding: 20px;
+        max-width: 420px;
+        margin: 60px auto;
+        padding: 30px 25px;
+
+        background: #191919;       /* new background for the container */
+        border-radius: 18px;       /* soft rounding fits lofi style */
+        box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+        backdrop-filter: blur(3px); /* optional soft blur for dreamy vibe */
+        }
+
+    /* --- Header with Image + Band Name --- */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 28px;
+    }
+
+    .header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #564f48;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-family: 'Karla', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      color: #f0ede8;
+      text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+    }
+
+    /* --- Soft Worn Link Buttons --- */
+    .link {
+      display: block;
+      background: #2a2827;
+      color: #e5e3de;
+      padding: 14px 18px;
+      margin: 12px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      border: 1px solid #3c3a38;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+      transition: background 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+      backdrop-filter: blur(2px);
+    }
+
+    .link:hover {
+      background: #3a3735;
+      transform: translateY(-2px);
+      opacity: 0.94;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img src="logo.jpg" alt="Band Logo">
+      <h1>CASSETTE CLUB</h1>
+    </div>
+
+    <a class="link" href="https://soundcloud.com/cassette-club-350953272" target="_blank">🎧 Soundcloud</a>
+    <a class="link" href="https://www.youtube.com/@CassetteClubMusic" target="_blank">▶️ YouTube</a>
+    <a class="link" href="https://www.instagram.com/cassetteclubmusic/" target="_blank">📸 Instagram</a>
+    <a class="link" href="https://www.tiktok.com/@cassetteclubmusic" target="_blank">⏰ TikTok</a>
+    <a class="link" href="https://cassetteclubmusic.bandcamp.com/" target="_blank">💿 Bandcamp</a>
+
+  </div>
+
+</body>
+</html>
